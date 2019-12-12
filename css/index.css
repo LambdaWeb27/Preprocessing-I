@@ -1,137 +1,145 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-  background-color:red;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
-html,
-body {
-  height: 100%;
+.up {
+  text-transform: uppercase;
+}
+html {
+  font-size: 62.5%;
+}
+.main-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background-color: cadetblue;
+  padding: 2%;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  header {
+    padding: 0;
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+  }
+}
+nav a {
+  margin-left: 3%;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@media (max-width: 500px) {
+  nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    padding: 2%;
+  }
+}
+.intro {
+  padding: 2%;
+  background-color: lightgray;
+  font-size: 2rem;
+}
+.intro .resume-img {
+  height: 335px;
+  width: 500px;
+  margin-bottom: 2%;
+}
+.intro h1 {
+  font-size: 3.5rem;
+}
+.intro p {
+  font-family: 'Sulphur Point', sans-serif;
+}
+.objective {
+  margin-top: 2%;
+  padding-top: 2%;
+  border-top: 1px solid black;
+}
+.objective p {
+  font-family: 'Sulphur Point', sans-serif;
+}
+button {
+  width: 18%;
+  margin-top: 2%;
+  padding: 1.5%;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  button {
+    width: 33%;
+  }
+}
+.education {
+  width: 100%;
+  line-height: 1.5;
+  padding: 2%;
+}
+.education h2 {
+  font-size: 2.5rem;
+}
+.education p {
+  width: 100%;
+  font-size: 2rem;
+}
+.jobs {
+  margin: 1.5%;
+  padding-top: 0.5%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.jobs .history {
+  width: 100%;
+}
+.jobs table {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+.jobs table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.jobs table td {
+  text-align: center;
+}
+.contact {
+  width: 100%;
+  padding: 2%;
+  font-size: 2rem;
+  margin-top: 2%;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 2%;
+  font-size: 1.6rem;
+  font-weight: bold;
 }

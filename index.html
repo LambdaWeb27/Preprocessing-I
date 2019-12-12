@@ -3,17 +3,85 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
-  <h1>My Resume</h1>
+  <div class="main-container">
+    <header>
+      <nav>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">portfolio</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+    <section class="intro">
+      <div class="resume-img">
+        <img src="img/Developing.jpg"/>
+      </div>
+      <div class="title">
+        <h1>
+          Julani Dempster - Software Engineer
+        </h1>
+        <p>Becoming a Software Engineer is my dream!</p>
+      </div>
+      <div class="objective">
+        <p>Since I was a child I've always had curiousity of how programs are made and the ideas behind them. Working for a company that invokes that feeling I had as a child in their employees everyday is where I want to be. Others would describe me as a fast learner that works well with others, and brings enthusiasm to the workplace.</p>
+        <button>view projects</button>
+      </div>
+    </section>
+    <section class="education">
+      <h2>Education: Lambda School</h2>
+      <p><strong>Skills</strong>: HTML, CSS, LESS, JAVASCRIPT, NODE.JS, PYTHON.</p>
+    </section>
+    <section class="jobs">
+      <div class="history">
+        <table>
+          <tr>
+            <th class="top-header" colspan="4">Employment</th>
+          </tr>
+          <tr>
+            <th>Yrs</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Tech Used</th>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td>E.A. Renfroe</td>
+            <td>Adjuster</td>
+            <td>Xactimate</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>USPS</td>
+            <td>MailHandler</td>
+            <td>None</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>contact</h2><br>
+      <address>
+        11223 Express Rd.<br>
+        Miami, FL 33123<br>
+      </address><br>
+      <p>dwayne.dempster@gmail.com</p><br>
+      <p>555-555-5555</p>
+    </section>
+    <footer>
+      <p> &copy;D Julani H. Dempster 2019</p>
+    </footer>
+  </div>
 </body>
 </html>
