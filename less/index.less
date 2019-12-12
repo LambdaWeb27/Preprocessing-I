@@ -3,6 +3,11 @@
 	padding:0;
 	margin:0;
 	max-width: 100%;
+	border:1px solid black;
+}
+
+html{
+	font-size:62.5%;
 }
 
 .main-container{
@@ -11,16 +16,18 @@
 }
 
 header{
-	display:flex;
-	justify-content:right;
+	// display:flex;
+	// justify-content:flex-end;
 	background-color:lightblue;
-	padding:2.5%;
+	padding:3%;
+	font-size:1.6rem;
+	font-weight: bold;
 	nav{
 		width:100%;
 		display:flex;
 		justify-content: flex-end;
 		a{
-			margin-left:2%;
+			margin-left:3%;
 			text-decoration: none;
 			text-transform: capitalize;
 		}	
@@ -28,5 +35,34 @@ header{
 			}
 		}
 			
+.intro{
+	padding:2%;
+	background-color:lightgray;
+	font-size:2rem;
+	.resume-img{
+		background-color:yellow;
+		height:335px;
+		width:500px;
+		margin-bottom:2%;
+	}
+	h1{
+		font-size:3.5rem;
+	}
+	.objective{
+		margin-top:2%;
+		padding-top:2%;
+		border-top:1px solid black;
+	}
+}
 
+button{
+	width:18%;
+	margin-top:2%;
+	padding:1.5%;
+	border-radius:10px;
+	background-color:forestgreen;
+	color:white;
+	text-transform:uppercase;
+	border:1px solid black;
+}
 
