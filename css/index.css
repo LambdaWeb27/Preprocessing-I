@@ -4,6 +4,9 @@
   margin: 0;
   max-width: 100%;
 }
+.up {
+  text-transform: uppercase;
+}
 html {
   font-size: 62.5%;
 }
@@ -12,7 +15,7 @@ html {
   margin: 0 auto;
 }
 header {
-  background-color: lightblue;
+  background-color: cadetblue;
   padding: 3%;
   font-size: 1.6rem;
   font-weight: bold;
@@ -21,6 +24,12 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 500) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 header nav a {
   margin-left: 3%;
@@ -40,10 +49,16 @@ header nav a {
 .intro h1 {
   font-size: 3.5rem;
 }
-.intro .objective {
+.intro p {
+  font-family: 'Sulphur Point', sans-serif;
+}
+.objective {
   margin-top: 2%;
   padding-top: 2%;
   border-top: 1px solid black;
+}
+.objective p {
+  font-family: 'Sulphur Point', sans-serif;
 }
 button {
   width: 18%;
@@ -59,7 +74,6 @@ button {
   width: 100%;
   line-height: 1.5;
   padding: 2%;
-  margin-top: 1%;
 }
 .education h2 {
   font-size: 2.5rem;
@@ -88,4 +102,23 @@ button {
 }
 .jobs table td {
   text-align: center;
+}
+.contact {
+  width: 100%;
+  padding: 2%;
+  font-size: 2rem;
+  margin-top: 2%;
+}
+.contact h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 3%;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
